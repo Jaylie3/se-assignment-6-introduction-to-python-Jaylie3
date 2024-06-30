@@ -8,34 +8,87 @@ Answer the following questions based on your understanding of Python programming
  Questions:
 
 1. Python Basics:
-   - What is Python, and what are some of its key features that make it popular among developers? Provide examples of use cases where Python is particularly effective.
+   - What is Python, and what are some of its key features that make it popular among developers? Provide examples of use cases where Python is particularly effective.:
+   -Python is a high-level, interpreted, and general-purpose programming language.
+   -Key features that make Python popular:
+   -Easy to learn and read syntax
+   -Extensive standard library and ecosystem of third-party packages
+Versatile - can be used for web development, data analysis, machine learning, automation, and more
+   -Example use cases: web development (Django, Flask), data analysis (NumPy, Pandas), machine learning (TensorFlow, Scikit-learn), automation (Selenium, Ansible)
 
 2. Installing Python:
-   - Describe the steps to install Python on your operating system (Windows, macOS, or Linux). Include how to verify the installation and set up a virtual environment.
+   - Describe the steps to install Python on your operating system (Windows, macOS, or Linux). Include how to verify the installation and set up a virtual environment:
+  -Steps to install Python on Windows, macOS, or Linux
+  -Verifying the installation (running python --version)
+  -Setting up a virtual environment (using venv or conda)
 
 3. Python Syntax and Semantics:
-   - Write a simple Python program that prints "Hello, World!" to the console. Explain the basic syntax elements used in the program.
+   - Write a simple Python program that prints "Hello, World!" to the console. Explain the basic syntax elements used in the program.:
+   print("Hello, World!")
 
 4. Data Types and Variables:
-   - List and describe the basic data types in Python. Write a short script that demonstrates how to create and use variables of different data types.
+   - List and describe the basic data types in Python. Write a short script that demonstrates how to create and use variables of different data types.:
+   Basic data types: integers, floats, strings, booleans
+Creating and using variables:
+python
+x = 42
+name = "Lindo"
+is_student = True
 
 5. Control Structures:
-   - Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.
+   - Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.:
+   Conditional statements (if-else):
+python
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
 
 6. Functions in Python:
-   - What are functions in Python, and why are they useful? Write a Python function that takes two arguments and returns their sum. Include an example of how to call this function.
+   - What are functions in Python, and why are they useful? Write a Python function that takes two arguments and returns their sum. Include an example of how to call this function.:
+   Defining a function:
+python
+def add_numbers(a, b):
+return a + b
+
+Calling the function:
+python
+result = add_numbers(3, 4)
+print(result)  # Output: 7
 
 7. Lists and Dictionaries:
    - Describe the differences between lists and dictionaries in Python. Write a script that creates a list of numbers and a dictionary with some key-value pairs, then demonstrates basic operations on both.
 
 8. Exception Handling:
-   - What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.
+   - What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.:
+   Lists:
+python
+numbers = [1, 2, 3, 4, 5]
+
+Dictionaries:
+python
+person = {"name": "Lindo", "age": 22, "city": "Bergville"}
 
 9. Modules and Packages:
-   - Explain the concepts of modules and packages in Python. How can you import and use a module in your script? Provide an example using the `math` module.
+   - Explain the concepts of modules and packages in Python. How can you import and use a module in your script? Provide an example using the `math` module.:
+   Importing the math module:
+python
+import math
+print(math.pi)
 
 10. File I/O:
-    - How do you read from and write to files in Python? Write a script that reads the content of a file and prints it to the console, and another script that writes a list of strings to a file.
+    - How do you read from and write to files in Python? Write a script that reads the content of a file and prints it to the console, and another script that writes a list of strings to a file.:
+    Reading a file:
+python
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+Writing to a file:
+python
+lines = ["Line 1", "Line 2", "Line 3"]
+with open("output.txt", "w") as file:
+    file.writelines([line + "\n" for line in lines])
 
 # Submission Guidelines:
 - Your answers should be well-structured, concise, and to the point.
